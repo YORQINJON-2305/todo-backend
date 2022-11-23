@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body{
+    background-color: #3c87ff;
+    overflow-y: hidden;
+}
+
+.alert{
+    max-width: 400px;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding: 15px 0;
+    background-color: green;
+    text-align: center;
+    border-radius: 8px;
+    transition: opacity 0.2s ease;
+    color: #fff;
+    opacity: 0;
+}
+
+.alert.show{
+    opacity: 1;
+}
+
+.wrapper{
+    max-width: 405px;
+    margin: 20px auto;
+    padding: 20px 0;
+    background-color: #fff;
+    border-radius: 7px;
+}
+
+.task-form{
+    padding: 0px 25px;
+    position: relative;
+    border-bottom: 1px solid #c9c9c9;
+    border-radius: 10px;
+}
+
+.task-img{
+    position: absolute;
+    top: 19%;
+    transform: translate(17px, -50%);
+}
+
+.task-input{
+    width: 100%;
+    outline: none;
+    font-size: 18px;
+    border-radius: 5px;
+    border: 1px solid #999;
+    padding: 8px 20px 8px 53px;
+}
+
+.task-input::placeholder{
+    color: #bfbfbf;
+}
+
+.add-btn-wrap{
+    display: flex;
+    justify-content: end;
+    padding: 20px 0;
+}
+
+.add-btn{
+    padding: 8px 15px;
+    font-size: 13px;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    background-color: #3c87ff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-wrap{
+    display: flex;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    transform: scale(0);
+}
+
+.modal-wrap.show{
+    transform: scale(1);
+}
+
+.task-collection{
+    max-height: 400px;
+    margin: 20px 25px 0 25px;
+    padding-left: 0;
+    overflow: auto;
+}
+
+.task-collection::-webkit-scrollbar-thumb{
+    background-color: #3c87ff;
+}
+
+.task-collection::-webkit-scrollbar{
+    width: 4px;
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+.task{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 3px;
+    list-style: none;
+    margin-bottom: 18px;
+    padding-bottom: 16px;
+    border-bottom: 1px solid #ccc;
+}
+
+.task:last-child{
+    margin-bottom: 0;
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+
+.task-text-wrap{
+    display: flex;
+}
+
+.task-text p.checked{
+    text-decoration: line-through;
+}
+
+.input-checkbox{
+    margin-right: 10px;
+}
+
+.edit-btn{
+    width: 20px;   
+    height: 20px;
+    margin-right: 6px;
+    border: none;
+    background-color: transparent;
+    background-image: url("../images/edit.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+.delete-btn{
+    width: 20px;   
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    background-image: url("../images/delete.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}

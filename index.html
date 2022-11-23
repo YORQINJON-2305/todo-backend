@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+  content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/main.js" defer></script>
+  <title>Home</title>
+</head>
+<body>
+  
+  <p class="alert">Update</p>
+  <div class="wrapper">
+    <form class="task-form" method="post">
+      <img class="task-img" src="./images/bars-icon.svg" alt="Bars icon">
+      <input class="task-input" type="text" placeholder="Add a new task">
+      <div class="add-btn-wrap">
+        <button class="add-btn">Add</button>
+      </div>
+    </form>
+    <ul class="task-collection"></ul>
+  </div>
+  
+  
+  
+  <template class="todo-template">
+    <li class="task">
+      <div class="task-text-wrap">
+        <p class="task-text"></p>
+      </div>
+      <div class="settings">
+        <button class="edit-btn"></button>
+        <button class="delete-btn"></button>
+      </ul>
+    </div>
+  </li>
+</template>
+
+</body>
+</html>
