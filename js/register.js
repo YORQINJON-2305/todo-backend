@@ -1,9 +1,3 @@
-const registerToken = localStorage.getItem("register-token");
-if(registerToken){
-    window.location.pathname = "/index.html"
-}
-
-
 const elForm = document.querySelector(".register-form");
 const elUsernameInput = elForm.querySelector(".username");
 const elEmailInput = elForm.querySelector(".email");
@@ -29,7 +23,6 @@ async function registerUsers(){
         })
         const data = await res.json();
         if(data.token){
-            localStorage.setItem("register-token", data.token);
             window.location.pathname = "/index.html"
         }
 

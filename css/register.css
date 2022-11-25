@@ -6,7 +6,7 @@
 }
 body{
     background-color: #080710;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .container{
@@ -44,24 +44,28 @@ body{
             #ff512f,
             #f09819
     );
-    right: -30px;
+    right: -80px;
     bottom: -80px;
+}
+
+.register-form-wrap{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+    height: 100vh;
 }
 
 .register-form{
     width: 100%;
     max-width: 400px;
-    max-height: 700px;
     background-color: rgba(255,255,255,0.13);
-    position: relative;
-    left: 50%;
-    transform: translate(-50%, 4%);
     border-radius: 10px;
     backdrop-filter: blur(20px);
     border: 2px solid rgba(255,255,255,0.1);
     box-shadow: 0 0 40px rgba(8,7,16,0.6);
-    padding: 50px 35px;
+    padding:20px 35px;
 }
+
 .register-form *{
     font-family: 'Poppins',sans-serif;
     color: #ffffff;
@@ -71,27 +75,28 @@ body{
 }
 
 .register-title{
-    font-size: 32px;
+    font-size: 24px;
     font-weight: 500;
     line-height: 42px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .register-label{
     display: block;
-    margin-top: 30px;
     font-size: 16px;
     font-weight: 500;
+    margin-bottom: 8px;
 }
 
 .register-input{
     display: block;
     height: 50px;
     width: 100%;
+    margin-bottom: 20px;
     background-color: rgba(255,255,255,0.07);
     border-radius: 3px;
     padding: 0 10px;
-    margin-top: 8px;
     font-size: 14px;
     font-weight: 300;
 }
@@ -100,8 +105,9 @@ body{
 }
 
 .register-btn{
-    margin-top: 50px;
     width: 100%;
+    margin-top: 15px;
+    margin-bottom: 10px;
     background-color: #ffffff;
     color: #080710;
     padding: 15px 0;
@@ -111,10 +117,32 @@ body{
     cursor: pointer;
 }
 
+.sign-in-text{
+    font-size: 12px;
+    text-align: center;
+}
+
+.sign-in-link{
+    color: dodgerblue;
+}
 
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (min-width: 992px) {
     .register-form{
-        transform: translate(-50%, 10%);
+        padding: 40px 35px;
     }
+
+    .register-title{
+        font-size: 34px;
+    }
+
+    .register-btn{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .sign-in-text{
+        font-size: 16px;
+    }
+
 }
